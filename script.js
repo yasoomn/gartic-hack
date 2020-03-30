@@ -7,8 +7,8 @@ function init() {
 	list = document.getElementById("list")
 	dict = JSON.parse(data)
 	input.addEventListener("input", e=> {
-		match(input.value)
-		showInfo(input.value)
+		match(input.value.toLowerCase())
+		showInfo(input.value.toLowerCase())
 	})
 }
 
